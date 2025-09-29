@@ -45,6 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" />
         <meta name="theme-color" content="#3B82F6" />
       </head>
       <body className={inter.className}>{children}</body>
