@@ -54,11 +54,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" sizes="180x180" />
-        <link rel="shortcut icon" href="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" />
-        <link rel="icon" href="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" sizes="32x32" type="image/png" />
-        <link rel="icon" href="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" sizes="16x16" type="image/png" />
         <meta name="theme-color" content="#3B82F6" />
       </head>
       <body className={inter.className}>{children}</body>
