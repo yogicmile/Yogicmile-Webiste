@@ -36,7 +36,7 @@ export default function Home() {
       <nav className="bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-20">
-            <Logo size="md" />
+            <Logo size="md" variant="horizontal" animated={true} />
             
             <div className="hidden lg:flex items-center space-x-8">
               <button onClick={() => scrollToSection('features')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Features</button>
@@ -531,7 +531,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="space-y-6">
-              <Logo size="lg" className="text-white [&_span]:text-white [&_.text-gray-900]:text-white [&_.text-gray-500]:text-gray-400" />
+              <Logo size="lg" variant="horizontal" className="[&_.text-gray-900]:text-white [&_.text-gray-500]:text-gray-400" />
               <p className="text-gray-400 leading-relaxed">
                 Transform your daily steps into valuable rewards. Join millions of users who are already living a healthier, more rewarding lifestyle.
               </p>
