@@ -36,9 +36,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-lg">Yg</span>
-              </div>
+              <img 
+                src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" 
+                alt="YogicMile Logo" 
+                className="w-10 h-10 rounded-xl"
+              />
               <span className="text-2xl font-bold text-gray-900">YogicMile</span>
             </div>
             
