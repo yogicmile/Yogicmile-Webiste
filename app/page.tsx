@@ -539,7 +539,7 @@ export default function Home() {
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
                 <img 
-                  src="/image.png" 
+                  src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" 
                   alt="YogicMile Logo" 
                   className="w-12 h-12 rounded-2xl shadow-lg"
                 />
