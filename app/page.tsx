@@ -37,7 +37,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3">
               <img 
-                src="/image.png" 
+                src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" 
                 alt="YogicMile Logo" 
                 className="w-10 h-10 rounded-xl shadow-lg"
               />

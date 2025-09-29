@@ -45,10 +45,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/image.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/image.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/image.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/image.png" />
+        <link rel="icon" href="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" />
         <meta name="theme-color" content="#3B82F6" />
       </head>
       <body className={inter.className}>{children}</body>
