@@ -36,8 +36,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl shadow-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">YM</span>
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl shadow-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">Yg</span>
               </div>
               <div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">YogicMile</span>
@@ -539,8 +539,8 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-400 rounded-2xl shadow-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">YM</span>
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-500 rounded-2xl shadow-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">Yg</span>
                 </div>
                 <div>
                   <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">YogicMile</span>
