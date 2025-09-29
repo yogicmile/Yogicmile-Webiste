@@ -25,34 +25,40 @@ export default function Logo({
     lg: 'text-3xl'
   };
 
-  const footstepSizes = {
-    sm: 'w-3 h-4',
-    md: 'w-4 h-5',
-    lg: 'w-5 h-6'
+  const stepSizes = {
+    sm: 'w-4 h-6',
+    md: 'w-5 h-7',
+    lg: 'w-6 h-8'
   };
 
-  // Footstep SVG component
-  const Footstep = ({ delay = 0, color = '#2BB673' }: { delay?: number; color?: string }) => (
+  // Footstep/Step SVG component
+  const FootStep = ({ delay = 0, color = 'white' }: { delay?: number; color?: string }) => (
     <svg 
-      className={`${footstepSizes[size]} ${animated ? 'animate-pulse' : ''}`}
+      className={`${stepSizes[size]} ${animated ? 'animate-pulse' : ''}`}
       style={animated ? { animationDelay: `${delay}ms`, animationDuration: '2s' } : {}}
-      viewBox="0 0 24 24" 
+      viewBox="0 0 24 32" 
       fill={color}
     >
-      <path d="M12 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-1 18c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm3-2c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm-1-3c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm-2-5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm4 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/>
+      {/* Footstep/shoe print shape */}
+      <path d="M12 4c2.2 0 4 1.8 4 4 0 1.5-.8 2.8-2 3.5v2c1.7.3 3 1.8 3 3.5 0 2.2-1.8 4-4 4s-4-1.8-4-4c0-1.7 1.3-3.2 3-3.5v-2c-1.2-.7-2-2-2-3.5 0-2.2 1.8-4 4-4z"/>
+      <ellipse cx="12" cy="24" rx="3" ry="2"/>
+      <ellipse cx="9" cy="26" rx="1.5" ry="1"/>
+      <ellipse cx="15" cy="26" rx="1.5" ry="1"/>
+      <ellipse cx="8" cy="28" rx="1" ry="0.8"/>
+      <ellipse cx="16" cy="28" rx="1" ry="0.8"/>
     </svg>
   );
 
   if (variant === 'icon-only') {
     return (
-      <div className={`${sizeClasses[size]} bg-gradient-to-br from-green-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg relative overflow-hidden ${className}`}>
+      <div className={`${sizeClasses[size]} bg-gradient-to-br from-purple-600 via-purple-700 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg relative overflow-hidden ${className}`}>
         <div className="flex space-x-1">
-          <Footstep delay={0} color="white" />
-          <Footstep delay={300} color="#FFD166" />
-          <Footstep delay={600} color="white" />
+          <FootStep delay={0} color="white" />
+          <FootStep delay={400} color="rgba(255,255,255,0.8)" />
+          <FootStep delay={800} color="rgba(255,255,255,0.6)" />
         </div>
         {/* Subtle shine effect */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent"></div>
       </div>
     );
   }
@@ -61,16 +67,16 @@ export default function Logo({
     <div className={`flex items-center space-x-4 ${sizeClasses[size]} ${className}`}>
       {/* Logo Text */}
       <div className="flex flex-col">
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-3">
           <span className={`${textSizeClasses[size]} font-bold text-gray-900 leading-tight tracking-tight`}>
-            Yogic<span className="text-blue-600">Mile</span>
+            Yogic<span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Mile</span>
           </span>
           
-          {/* Footsteps Animation */}
-          <div className="flex items-center space-x-1 ml-2">
-            <Footstep delay={0} color="#2BB673" />
-            <Footstep delay={400} color="#0F62FE" />
-            <Footstep delay={800} color="#FFD166" />
+          {/* Walking Steps Animation */}
+          <div className="flex items-end space-x-1 ml-2">
+            <FootStep delay={0} color="#7C3AED" />
+            <FootStep delay={400} color="#3B82F6" />
+            <FootStep delay={800} color="#6366F1" />
           </div>
         </div>
         
