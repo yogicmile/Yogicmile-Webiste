@@ -54,9 +54,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/favicon.png" sizes="180x180" />
-        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.png?v=2" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicon.png?v=2" sizes="180x180" />
+        <link rel="shortcut icon" href="/favicon.png?v=2" />
         <meta name="theme-color" content="#3B82F6" />
       </head>
       <body className={inter.className}>{children}</body>
