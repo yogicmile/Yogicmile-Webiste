@@ -1,12 +1,30 @@
 {
-  "name": "nextjs",
+  "name": "yogicmile-website",
   "version": "0.1.0",
+  "description": "YogicMile - Transform your daily steps into valuable rewards",
   "private": true,
+  "homepage": "https://www.yogicmile.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/yogicmile-website.git"
+  },
+  "keywords": [
+    "fitness",
+    "health",
+    "rewards",
+    "step-tracking",
+    "mobile-app",
+    "wellness",
+    "gamification"
+  ],
+  "author": "YogicMile Team",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
