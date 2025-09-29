@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'YogicMile - Walk More. Earn More.',
     description: 'Track your steps, hit your goals, and earn coins you can redeem for rewards.',
-    images: ['/og-image.jpg'],
+    images: ['/favicon.svg'],
   },
   robots: {
     index: true,
@@ -54,10 +54,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/favicon.ico" sizes="16x16 32x32" type="image/x-icon" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="/favicon.svg" sizes="180x180" />
+        <link rel="shortcut icon" href="/favicon.svg" />
         <meta name="theme-color" content="#3B82F6" />
+        <meta name="msapplication-TileColor" content="#3B82F6" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
