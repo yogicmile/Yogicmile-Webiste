@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg';
@@ -13,6 +14,12 @@ export default function Logo({
   animated = false,
   className = '' 
 }: LogoProps) {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const sizeClasses = {
     sm: variant === 'horizontal' ? 'h-8' : 'w-8 h-8',
     md: variant === 'horizontal' ? 'h-12' : 'w-12 h-12',
@@ -32,10 +39,13 @@ export default function Logo({
   };
 
   // Footstep/Step SVG component
-  const FootStep = ({ delay = 0, color = 'white' }: { delay?: number; color?: string }) => (
+  const FootStep = ({ delay = 0, color = 'white' }: { delay?: number; color?: string }) => {
+    const shouldAnimate = animated && isClient;
+    
+    return (
     <svg 
-      className={`${stepSizes[size]} ${animated ? 'animate-pulse' : ''}`}
-      style={animated ? { animationDelay: `${delay}ms`, animationDuration: '2s' } : {}}
+      className={`${stepSizes[size]} ${shouldAnimate ? 'animate-pulse' : ''}`}
+      style={shouldAnimate ? { animationDelay: `${delay}ms`, animationDuration: '2s' } : {}}
       viewBox="0 0 24 32" 
       fill={color}
     >
@@ -47,7 +57,8 @@ export default function Logo({
       <ellipse cx="8" cy="28" rx="1" ry="0.8"/>
       <ellipse cx="16" cy="28" rx="1" ry="0.8"/>
     </svg>
-  );
+    );
+  };
 
   if (variant === 'icon-only') {
     return (
