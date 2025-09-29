@@ -6,6 +6,8 @@ const nextConfig = {
   },
   images: { unoptimized: true },
   webpack: (config, { isServer }) => {
+    // Disable caching to prevent corruption issues
+    config.cache = false;
     if (isServer) {
       config.cache = false;
     }
