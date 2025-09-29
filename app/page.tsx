@@ -39,12 +39,8 @@ export default function Home() {
               <img 
                 src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" 
                 alt="YogicMile Logo" 
-                className="w-12 h-12 rounded-2xl shadow-lg"
+                className="w-10 h-10"
               />
-              <div>
-                <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">YogicMile</span>
-                <div className="text-xs text-gray-500 -mt-1">Walk. Earn. Repeat.</div>
-              </div>
             </div>
             
             <div className="hidden lg:flex items-center space-x-8">
