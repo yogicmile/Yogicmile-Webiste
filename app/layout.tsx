@@ -31,7 +31,6 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'YogicMile - Walk More. Earn More.',
     description: 'Track your steps, hit your goals, and earn coins you can redeem for rewards.',
-    images: ['/favicon.svg'],
   },
   robots: {
     index: true,
