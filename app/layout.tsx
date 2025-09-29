@@ -54,12 +54,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/favicon-simple.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/favicon.svg" sizes="180x180" />
-        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicon.png" sizes="180x180" />
+        <link rel="shortcut icon" href="/favicon.png" />
         <meta name="theme-color" content="#3B82F6" />
-        <meta name="msapplication-TileColor" content="#3B82F6" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
