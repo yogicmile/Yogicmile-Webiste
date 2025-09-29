@@ -16,14 +16,6 @@ export const metadata: Metadata = {
     description: 'Track your steps, hit your goals, and earn coins you can redeem for rewards. Fitness meets motivation with YogicMile.',
     url: 'https://www.yogicmile.com',
     siteName: 'YogicMile',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'YogicMile App',
-      },
-    ],
     locale: 'en_US',
     type: 'website',
   },
