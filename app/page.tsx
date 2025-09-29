@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Logo from '@/components/Logo';
 import { Smartphone, Trophy, Target, Users, Star, Download, Play, CircleCheck as CheckCircle, ArrowRight, Menu, X, Footprints, Coins, Gift, TrendingUp, Shield, Zap, ChartBar as BarChart3, Heart, Award, Clock, MapPin, Calendar, Activity, Dumbbell, Timer } from 'lucide-react';
 
 export default function Home() {
@@ -35,14 +36,7 @@ export default function Home() {
       <nav className="bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-20">
-            <div className="flex items-center space-x-3">
-              <img 
-                src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" 
-                alt="YogicMile Logo" 
-                className="w-10 h-10 rounded-xl shadow-lg"
-              />
-              <span className="text-2xl font-bold text-gray-900">YogicMile</span>
-            </div>
+            <Logo size="md" />
             
             <div className="hidden lg:flex items-center space-x-8">
               <button onClick={() => scrollToSection('features')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Features</button>
@@ -537,17 +531,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="space-y-6">
-              <div className="flex items-center space-x-3">
-                <img 
-                  src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" 
-                  alt="YogicMile Logo" 
-                  className="w-12 h-12 rounded-2xl shadow-lg"
-                />
-                <div>
-                  <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">YogicMile</span>
-                  <div className="text-xs text-gray-400 -mt-1">Walk. Earn. Repeat.</div>
-                </div>
-              </div>
+              <Logo size="lg" className="text-white [&_span]:text-white [&_.text-gray-900]:text-white [&_.text-gray-500]:text-gray-400" />
               <p className="text-gray-400 leading-relaxed">
                 Transform your daily steps into valuable rewards. Join millions of users who are already living a healthier, more rewarding lifestyle.
               </p>
