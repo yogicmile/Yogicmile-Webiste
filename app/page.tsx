@@ -36,9 +36,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl shadow-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">Yg</span>
-              </div>
+              <img 
+                src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" 
+                alt="YogicMile Logo" 
+                className="w-12 h-12 rounded-2xl shadow-lg"
+              />
               <div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">YogicMile</span>
                 <div className="text-xs text-gray-500 -mt-1">Walk. Earn. Repeat.</div>
@@ -540,7 +542,11 @@ export default function Home() {
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-500 rounded-2xl shadow-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">Yg</span>
+                  <img 
+                    src="/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" 
+                    alt="YogicMile Logo" 
+                    className="w-12 h-12 rounded-2xl"
+                  />
                 </div>
                 <div>
                   <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">YogicMile</span>
