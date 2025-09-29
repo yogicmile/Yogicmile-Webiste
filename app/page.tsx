@@ -536,9 +536,11 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-500 rounded-2xl shadow-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">Yg</span>
-                </div>
+                <img 
+                  src="/image.png" 
+                  alt="YogicMile Logo" 
+                  className="w-12 h-12 rounded-2xl shadow-lg"
+                />
                 <div>
                   <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">YogicMile</span>
                   <div className="text-xs text-gray-400 -mt-1">Walk. Earn. Repeat.</div>
