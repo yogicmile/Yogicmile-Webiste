@@ -22,7 +22,7 @@ export default function Logo({
   return (
     <div className={`flex items-center ${className}`}>
       <img
-        src="/yogic%20logo.png"
+        src="/yogic logo.png"
         alt="YogicMile"
         className={`${sizeClasses[size]} w-auto object-contain`}
         onError={(e) => {
